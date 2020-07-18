@@ -1,6 +1,6 @@
-let add = function(number1,number2){
-    return number1 + number2
+
+function addition(){
+    let num1 = parseInt(document.getElementById('num1').value)
+    let num2 = parseInt(document.getElementById('num2').value)
+     alert(num1 + num2)
 }
-let number1 = parseInt(prompt('Enter a number'))
-let number2 = parseInt(prompt('Enter another number'))
-alert(add(number1,number2))
