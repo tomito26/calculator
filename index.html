@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Calculator</h1>
-<form action="submit">
-    <label for="number1">Enter a number</label><br>
-        <input type="text" id="num1"><br>
-    <label for="number2">Enter another number:</label><br>
-    <input type="text" id="num2"><br>
+    
+    <div class="container bg-secondary">
+        <h1 class='text-center'>Calculator</h1>
+        <form  id="add" class= 'd-flex flex-column align-items-center'>
+            <div class="form-group w-25">
+                <label for="add1">1st number:</label>
+                <input type="text" name="add1" id="add1" class="form-control">
+            </div>
+            <div class="form-group w-25">
+                <label for="add2">2nd number:</label>
+                <input type="text" name="add2" id="add2" class="form-control">
+            </div>
+            <button type="submit" class="btn">Add!</button>
+        </form>
+        <div id="output"></div>
+    </div>
 
-    <button onclick="addition()">Submit</button>
-
-</form>
-    <script src="./js/script.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
